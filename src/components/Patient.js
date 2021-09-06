@@ -1,10 +1,20 @@
-import {useState} from 'react';
-
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 
 const Patient = () => {
     const [email , setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword , setConfirmPassword] = useState("");
+   /*  useEffect(() => {
+      
+      return () => {
+        cleanup
+      }
+    }, [input]) */
+    const postdata = () =>{
+      axios.post('https://dev-kuza-backend.herokuapp.com/user-management/create-new-account/', )
+    }
+    
    
         
       
